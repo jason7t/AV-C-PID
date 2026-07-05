@@ -1,0 +1,22 @@
+# Core
+pandas>=1.5.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+lightgbm>=3.3.0
+scipy>=1.9.0
+joblib>=1.2.0
+
+# Quantile forest (RF QR and SPCI QRF)
+quantile-forest>=1.2.0
+
+# Paper's CP library (requires PyTorch; causes segfault on macOS M-series with skranger)
+# torch>=1.13.0   ← needed for SPCI_class
+# sklearn-quantile>=0.0.19  ← needed for KNeighborsQuantileRegressor
+# skranger>=0.8.0  ← optional (SPCI_class falls back gracefully if missing)
+
+# Theta scorecaster and base forecaster for AV-C-PID
+statsmodels>=0.13.0
+
+# Visualisation (optional)
+matplotlib>=3.5.0
+seaborn>=0.12.0
